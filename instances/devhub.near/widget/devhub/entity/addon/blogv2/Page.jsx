@@ -159,7 +159,7 @@ return (
           size: "35px",
           postType: "blog",
           externalLink: href({
-            gateway: httpbin?.body?.headers?.Origin.slice(8) ?? "near.social",
+            gateway: httpbin?.body?.headers?.Origin?.slice(8) ?? "near.social",
             widgetSrc: "${REPL_DEVHUB}/widget/app",
             params: {
               page: "blogv2",

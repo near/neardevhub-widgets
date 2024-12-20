@@ -218,7 +218,6 @@ test.describe("Wallet is connected as admin", () => {
       mentionSuggestions.push(text);
     }
 
-    // When I manually test, it shows the correct 4 users
     expect(mentionSuggestions.slice(0, 4)).toEqual(expected);
     await pauseIfVideoRecording(page);
 
